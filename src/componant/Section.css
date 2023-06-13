@@ -1,0 +1,89 @@
+
+section {
+    min-height: 60vh;
+    width: 100%;
+    
+    background: url(https://i.pinimg.com/564x/4b/68/08/4b6808b44630a08039ca76dc9e2a24b7.jpg);
+    /* background: url(https://i.pinimg.com/564x/a9/3c/8e/a93c8e0464fe349dfa8d652580fe54e3.jpg); */
+  background-repeat: no-repeat;
+  background-position:center;
+    background-size: cover; 
+  
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+quote {
+  background: rgba(47, 49, 65, 0.5);
+  color: white;
+  padding: 70px 50px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 10px 16px 42px -23px rgba(0, 0, 0, 0.288);
+}
+
+.h1 {
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-family: Courier, monospace;
+}
+
+.p {
+  font-size: clamp(0.7rem, 2.5vw, 1rem);
+  font-family: "Segoe Script";
+  color: orange;
+
+
+}
+
+@media screen and (max-width: 950px) {
+  
+  label.logo {
+    padding-left: 40px;
+  }
+  
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  
+  .checkbtn {
+    display: block;
+  }
+  
+  ul {
+    position: fixed;
+    width: 100%; 
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: 100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  
+  nav ul li a {
+    font-size: 20px;
+  }
+  
+  a:hover, a.active {
+    background: none;
+    color: #0082e6;
+  }
+  
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
